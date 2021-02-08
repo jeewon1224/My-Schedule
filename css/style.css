@@ -17,4 +17,46 @@ header .headerWrap h1{font-weight: 400; font-size: 22px; padding: 10px 0;}
 
 
 /* container style */
-.container{width: 100%; height: auto; padding: 20px 0;}
+.container{width: 100%; height: auto; padding: 20px 0; display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(5, minmax(100px, auto));;  _grid-gap: 5px; gap:5px;}
+/* repeat(2, 1fr) : 두 개를 똑같이 나눠 가짐 
+grid-template-rows: repeat(5, minmax(100px, auto)); : 5줄 반복하는데 내용 없어도 최소 높이가 100px 이고 그 이상은 컨텐츠 따라서 auto로 높이를 잡는다!!!
+@@@ minmax(100px, auto)의 의미는 최소한 100px, 최대는 자동으로(auto) 늘어나게.. 입니다. 즉 아무리 내용의 양이 적더라도 최소한 높이 100px은 확보하고, 내용이 많아 100px이 넘어가면 알아서 늘어나도록 처리해 준 예시입니다.*/
+
+.container .item{border: 1px solid #00008c; background: #fff;}
+
+.container .item:nth-child(1) {
+	grid-row-start: 1;
+	grid-row-end: 5;
+  display: flex;
+align-items: center; 
+justify-content: center; padding: 30px 0;}
+
+.container .item:nth-child(6) {
+	grid-column-start: 1;
+	grid-column-end: 3;
+
+}
+
+
+
+/* circle graph style */
+.graph-circle {position: relative; width: 100%; height: 100%; display: flex; flex-direction: column;}
+
+
+.circle-graph-container {position: relative; display: flex; width: 100%; height: 100%;}
+.circle-graph { margin: 0 15px; position: relative; width: 100%; line-height: 1.2 !important; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out;
+ transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+canvas {
+  position: absolute;
+  /* top: 0px; */
+}
+
+
+.totalTit{width: 100%; height: auto; text-align: center;;}
