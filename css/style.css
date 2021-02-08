@@ -1,0 +1,20 @@
+/* header style */
+header{width: 100%; height: auto; background: #00008c; color: #fff;}
+
+header .headerWrap{display: flex; align-items: center; justify-content: space-between;} 
+/* flex + space between : h1과 mIcon을 각 양 끝으로 보내줌 */
+
+header .headerWrap .mIcon{width: 30px; height: auto; display: flex; flex-wrap: wrap; justify-content: flex-end; cursor:pointer;}
+header .headerWrap .mIcon span{width: 100%; height: 2px; background: #fff; display: block; }
+
+header .headerWrap .mIcon span:nth-child(1){}
+header .headerWrap .mIcon span:nth-child(2){margin: 5px 0; width: 50%; }
+header .headerWrap .mIcon span:nth-child(3){width: 70%;}
+
+header .headerWrap h1{font-weight: 400; font-size: 22px; padding: 10px 0;}
+
+
+
+
+/* container style */
+.container{width: 100%; height: auto; padding: 20px 0;}
