@@ -1,0 +1,23 @@
+@media screen and (max-width:980px){
+  .center{padding: 0 15px;}
+}
+
+
+@media screen and (max-width:780px){
+  .container{grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(9, minmax(100px, auto));}
+ /*  repeat(9 인 이유: 첫번째 아이템이 4개를 합친 것이지 때문에 총 9로 계산해야함 */
+  .container .item:nth-child(1),
+  .container .item:nth-child(2),
+  .container .item:nth-child(3),
+  .container .item:nth-child(4),
+  .container .item:nth-child(5){grid-column-start: 1; grid-column-end: 3;}
+
+}
+
+
+@media screen and (max-width:400px){
+  .container{grid-template-rows: repeat(9, minmax(70px, auto)); padding: 20px 0 100px;}
+  .circle-graph p{font-size:18px; font-weight: 400;}
+
+  .subPfBar .pfImg{font-size: 20px;}
+}
