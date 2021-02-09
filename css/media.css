@@ -12,6 +12,9 @@
   .container .item:nth-child(4),
   .container .item:nth-child(5){grid-column-start: 1; grid-column-end: 3;}
 
+/* button box style */
+  .btns{justify-content: center;}
+  .btns button{padding: 5px 20px; font-size: 12px;}
 }
 
 
