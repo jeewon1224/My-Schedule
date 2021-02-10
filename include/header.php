@@ -12,13 +12,3 @@
     </header>
 
 
-
-    <script>
-  const pathname = window.location.pathname;
-  const changeTit = document.querySelector('#title');
-
-
-  if(pathname.includes('input_form')){ //path 네임에 input_form가 있으면
-   changeTit.innerHTML="Schedule Input";
-  } 
-</script>

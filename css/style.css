@@ -56,7 +56,7 @@ canvas {position: absolute;/* top: 0px; */}
 .subPfBar .pfContents h3{font-size: 14px; font-weight: 600;}
 .subPfBar .pfContents p{font-size: 12px; font-weight: 300; margin: 0 0 5px;}
 .subPfBar .pfContents p b{font-weight: normal; font-size: 12px;}
-.subPfBar .pfContents .rateNum{font-weight: 300; font-size: 12px; width: 25px; text-align: right; border: 0;} 
+.subPfBar .pfContents .rateNum{font-weight: 300; font-size: 12px; width: 25px; text-align: right; border: 0; outline: 0;} 
 .subPfBar .pfContents .rateNum:focus{border: 1px solid #008c8c;}
 
 
@@ -83,5 +83,7 @@ footer p{color: #fff; font-weight: 400;}
 
 .inputContainer .item:nth-child(6) {grid-column-start: 1;grid-column-end: 3;}
 .inputContainer .item:nth-child(7) {grid-column-start: 1;grid-column-end: 3;}
+
+.inputContainer .subPfBar .pfContents .rateNum:focus{border: 0; background: none;}
 
 
