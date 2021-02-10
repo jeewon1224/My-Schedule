@@ -1,8 +1,10 @@
 /* header style */
-header{width: 100%; height: auto; background: #00008c; color: #fff;}
+header{width: 100%; height: auto; background: #008c8c; color: #fff;}
 
 header .headerWrap{display: flex; align-items: center; justify-content: space-between;} 
 /* flex + space between : h1과 mIcon을 각 양 끝으로 보내줌 */
+
+header .headerWrap a{color: #fff; font-size: 22px;}
 
 header .headerWrap .mIcon{width: 30px; height: auto; display: flex; flex-wrap: wrap; justify-content: flex-end; cursor:pointer;}
 header .headerWrap .mIcon span{width: 100%; height: 2px; background: #fff; display: block; }
@@ -17,12 +19,12 @@ header .headerWrap h1{font-weight: 400; font-size: 22px; padding: 10px 0;}
 
 
 /* container style */
-.container{width: 100%; height: auto; padding: 20px 0; display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(5, minmax(100px, auto));  gap:5px;}
+.container{width: 100%; height: auto;  display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(5, minmax(100px, auto));  gap:5px;}
 /* repeat(2, 1fr) : 두 개를 똑같이 나눠 가짐 
 grid-template-rows: repeat(5, minmax(100px, auto)); : 5줄 반복하는데 내용 없어도 최소 높이가 100px 이고 그 이상은 컨텐츠 따라서 auto로 높이를 잡는다!!!
 @@@ minmax(100px, auto)의 의미는 최소한 100px, 최대는 자동으로(auto) 늘어나게.. 입니다. 즉 아무리 내용의 양이 적더라도 최소한 높이 100px은 확보하고, 내용이 많아 100px이 넘어가면 알아서 늘어나도록 처리해 준 예시입니다.*/
 
-.container .item{_border: 1px solid #00008c; background: #fff;}
+.container .item{_border: 1px solid #008c8c; background: #fff;}
 
 .container .item:nth-child(1) {grid-row-start: 1; grid-row-end: 5; display: flex;align-items: center; justify-content: center; padding: 30px 0;}
 
@@ -39,7 +41,7 @@ grid-template-rows: repeat(5, minmax(100px, auto)); : 5줄 반복하는데 내�
 }
 
 canvas {position: absolute;/* top: 0px; */}
-.circle-graph p{font-size:26px; font-weight: 400; color: #00008c;}
+.circle-graph p{font-size:26px; font-weight: 400; color: #008c8c;}
 
 
 .totalTit{width: 100%; height: auto; text-align: center; font-size:16px; font-weight:400;}
@@ -49,19 +51,37 @@ canvas {position: absolute;/* top: 0px; */}
 /* sub portfolio progress bar style */
 .subPfBar{padding: 10px; display: flex; align-items: center;}
 .subPfBar .pfImg{width: 15%; font-size: 28px; display: flex; align-items: center; justify-content: center;}
-.subPfBar .pfImg i{color: #00008c;}
+.subPfBar .pfImg i{color: #008c8c;}
 .subPfBar .pfContents{width: 85%;}
 .subPfBar .pfContents h3{font-size: 14px; font-weight: 600;}
 .subPfBar .pfContents p{font-size: 12px; font-weight: 300; margin: 0 0 5px;}
+.subPfBar .pfContents p b{font-weight: normal; font-size: 12px;}
 .subPfBar .pfContents .rateNum{font-weight: 300; font-size: 12px; width: 25px; text-align: right; border: 0;} 
-.subPfBar .pfContents .rateNum:focus{border: 1px solid #00008c;}
+.subPfBar .pfContents .rateNum:focus{border: 1px solid #008c8c;}
 
 
-.subPfBar .pfBarBox{padding: 3px 0; border: 1px solid #00008c; border-radius: 10px; background: #eee;}
-.subPfBar .pfBarBox .pfBar{display: block; width: 0; height: 15px; background: #00008c; border-radius: 0 10px 10px 0;}
+.subPfBar .pfBarBox{padding: 3px 0; border: 1px solid #008c8c; border-radius: 10px; background: #eee;}
+.subPfBar .pfBarBox .pfBar{display: block; width: 0; height: 15px; background: #008c8c; border-radius: 0 10px 10px 0;}
 
 
 /* button style */
 .btns{display: flex; align-items: center; justify-content: flex-end; padding: 10px;}
-.btns button{border:1px solid #00008c; background: #00008c; color: #fff; font-weight: 400; font-family: 'Noto Sans KR'; padding: 10px 30px;}
+.btns button{border:1px solid #008c8c; background: #008c8c; color: #fff; font-weight: 400; font-family: 'Noto Sans KR'; padding: 10px 30px;}
 .btns button:nth-child(2){margin: 0 5px;}
+
+
+footer{width: 100%;  height: auto; background: #008c8c; padding: 15px 0; text-align: center; position: fixed; bottom: 0;}
+footer p{color: #fff; font-weight: 400;}
+
+
+/* input page style */
+.inputContainer{width: 100%; height: auto;  display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(6, minmax(100px, auto));  gap:5px;}
+
+.inputContainer .item{_border: 1px solid #008c8c; background: #fff;}
+
+.inputContainer .item:nth-child(1) {grid-row-start: 1; grid-row-end: 5; display: flex;align-items: center; justify-content: center; padding: 30px 0;}
+
+.inputContainer .item:nth-child(6) {grid-column-start: 1;grid-column-end: 3;}
+.inputContainer .item:nth-child(7) {grid-column-start: 1;grid-column-end: 3;}
+
+
