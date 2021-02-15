@@ -17,6 +17,6 @@ input:focus, textarea:focus{background:#f8f8f8;}
 
 
 /* Contents wrap style */
-.wrap{width: 100%; height: 100vh; background: #fbfbfb; display: flex; align-items: center; justify-content: center; flex-direction: column;}
-
-/* wrpa 전체를 화면에 채우고 싶다면 flex 부여한다 -> 헤더롸 컨테이너가 가로 정렬 되므로 flex-direction을 colums을 줘서 세로 정렬한다!! */
+.wrap{width: 100%; height: 100vh; background: #fbfbfb; display: flex; align-items: center; justify-content: space-between; flex-direction: column;}
+/* 높이 vh는 뷰포트 하이트 약자.. 현재 사용하는 브라우저를 기준으로 100으로 나누어서 봄 */
+/* wrap 전체를 화면에 채우고 싶다면 flex 부여한다 -> 헤더롸 컨테이너가 가로 정렬 되므로 flex-direction을 colums을 줘서 세로 정렬한다!! */

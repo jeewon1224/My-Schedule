@@ -53,14 +53,15 @@
 
 
     <!-- container -->
-    <div class="center">
+    <div class="center gridWrap">
       <form action="/myschedule/php/update_rate.php" method="get" name="updateRate">
         <div class="container">
 
 
       <!-- 진행상황 그래프 (상단 그리드) 인클루드 연결 -->
         <?php
-        include $_SERVER['DOCUMENT_ROOT']."/myschedule/include/grid_up.php";
+          include $_SERVER['DOCUMENT_ROOT']."/myschedule/include/latest_date.php";
+          include $_SERVER['DOCUMENT_ROOT']."/myschedule/include/grid_up.php";
         ?>
 
 

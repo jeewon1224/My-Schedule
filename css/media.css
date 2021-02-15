@@ -13,6 +13,10 @@
   .container .item:nth-child(4),
   .container .item:nth-child(5){grid-column-start: 1; grid-column-end: 3;}
 
+  .inputContainer{grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(5, minmax(100px, auto));  padding: 20px 0;}
+  .inputContainer .item{grid-column-start: 1; grid-column-end: 3;}
+  .inputContainer .item.subPfBar{display: none;}
+
 /* button box style */
   .btns{justify-content: center;}
   .btns button{padding: 5px 20px; font-size: 12px;}
@@ -20,7 +24,21 @@
 
   /* footer style */
   footer{position: relative;}
+
+
+  
 }
+
+
+@media screen and (max-width:650px){
+
+  .item.inputBox .projectCate{font-size: 12px; width: 100%; }
+  .item.inputBox .projectTit{font-size: 12px; width: 100%; margin-top: 5px;}
+  .item.inputBox .projectCon{font-size: 12px;}
+}
+
+
+
 
 
 @media screen and (max-width:400px){

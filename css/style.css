@@ -1,3 +1,5 @@
+
+
 /* header style */
 header{width: 100%; height: auto; background: #008c8c; color: #fff;}
 
@@ -19,7 +21,7 @@ header .headerWrap h1{font-weight: 400; font-size: 22px; padding: 10px 0;}
 
 
 /* container style */
-.container{width: 100%; height: auto;  display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(5, minmax(100px, auto));  gap:5px;}
+.container{width: 100%; height: auto;  display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(5, minmax(100px, auto));  gap:5px; padding: 20px 0;}
 /* repeat(2, 1fr) : 두 개를 똑같이 나눠 가짐 
 grid-template-rows: repeat(5, minmax(100px, auto)); : 5줄 반복하는데 내용 없어도 최소 높이가 100px 이고 그 이상은 컨텐츠 따라서 auto로 높이를 잡는다!!!
 @@@ minmax(100px, auto)의 의미는 최소한 100px, 최대는 자동으로(auto) 늘어나게.. 입니다. 즉 아무리 내용의 양이 적더라도 최소한 높이 100px은 확보하고, 내용이 많아 100px이 넘어가면 알아서 늘어나도록 처리해 준 예시입니다.*/
@@ -70,12 +72,12 @@ canvas {position: absolute;/* top: 0px; */}
 .btns button:nth-child(2){margin: 0 5px;}
 
 
-footer{width: 100%;  height: auto; background: #008c8c; padding: 15px 0; text-align: center; position: fixed; bottom: 0;}
+footer{width: 100%;  height: auto; background: #008c8c; padding: 15px 0; text-align: center; _position: fixed; bottom: 0;}
 footer p{color: #fff; font-weight: 400;}
 
 
 /* input page style */
-.inputContainer{width: 100%; height: auto;  display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(6, minmax(100px, auto));  gap:5px;}
+.inputContainer{width: 100%; height: auto;  display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(6, minmax(100px, auto));  gap:5px; padding: 20px 0;}
 
 .inputContainer .item{_border: 1px solid #008c8c; background: #fff;}
 
@@ -87,3 +89,17 @@ footer p{color: #fff; font-weight: 400;}
 .inputContainer .subPfBar .pfContents .rateNum:focus{border: 0; background: none;}
 
 
+/* input form style */
+.item.inputBox{padding: 10px;}
+.item.inputBox .projectCate{width: 30%; height: 40px; border: 1px solid #ccc; border-radius: 0; outline: 0; padding: 5px; display: block; float: left; font-family: 'Open Sans'; color: #008c8c;}
+.item.inputBox .projectTit{width: calc(70% - 5px); height: 40px; padding: 5px; border: 1px solid #ccc; display: block; float: right; font-family: 'Noto Sans KR';}
+.item.inputBox .projectCon{width: 100%; height: 150px; border:1px solid #ccc; resize: none; padding: 5px; margin-top: 5px; font-family: 'Noto Sans KR';}
+
+.item.inputBox .projectTit:focus{border: 1px solid #008c8c;}
+.item.inputBox .projectCon:focus{border: 1px solid #008c8c;}
+
+/* .item.inputBox{padding: 10px; display: flex; flex-wrap:wrap; align-items:center;}
+.item.inputBox .projectCate{width: 30%; height: 40px; border: 1px solid #ccc; border-radius: 0; outline: 0; padding: 5px; margin-right: 5px;}
+.item.inputBox .projectTit{width: calc(70% - 5px); height: 40px; padding: 5px; border: 1px solid #ccc; }
+.item.inputBox .projectCon{width: 100%; height: 150px; border:1px solid #ccc; resize: none; padding: 5px; margin-top: 5px;}
+  */
