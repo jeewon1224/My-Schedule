@@ -69,7 +69,7 @@
               <select name="projectCate" id="" class="projectCate">
                 <option value="dbProject">Database Project</option>
                 <option value="apiProject">API Project</option>
-                <option value="renealProject">Reneal Project</option>
+                <option value="renewalProject">Renewal Project</option>
                 <option value="webProject">Web Planning Project</option>
               </select>
               <input type="text" name="projectTit" class="projectTit" placeholder="일정 요약을 입력해 주세요.">
@@ -80,7 +80,7 @@
           <div class="item btns">
             <!-- <button type="submit">진행률 수정</button> -->
             <button type="button" onclick="schInput()">진행 상황 작성</button>
-            <button type="button">진행 상황 확인</button>
+            <button type="button" onclick="javascript:location.href='/myschedule/pages/sch_view.php?key=view_all'">진행 상황 확인</button>
           </div>
 
           

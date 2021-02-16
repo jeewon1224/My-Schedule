@@ -4,7 +4,7 @@ $projectCate = $_POST['projectCate'];
 // $projectTit = $_POST['projectTit'];
 // $projectCon = $_POST['projectCon'];
 
-// 개행 분자 처리 오류 방지
+// 개행 문자 처리 오류 방지
 $projectTit = nl2br($_POST['projectTit']);
 $projectCon = nl2br($_POST['projectCon']);
 

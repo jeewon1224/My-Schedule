@@ -12,7 +12,7 @@ $db_date=$db_date_row['sch_txt_reg'];
  $api_date=$api_date_row['sch_txt_reg'];
 
  // renewal project 최근 날짜 
- $ren_data_sql="select * from sch_txt where sch_txt_cate='renealProject' order by sch_txt_num desc limit 1";
+ $ren_data_sql="select * from sch_txt where sch_txt_cate='renewalProject' order by sch_txt_num desc limit 1";
  $ren_date_result=mysqli_query($dbConn, $ren_data_sql);
  $ren_date_row=mysqli_fetch_array($ren_date_result);
  $ren_date=$ren_date_row['sch_txt_reg'];

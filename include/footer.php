@@ -25,6 +25,11 @@
     
     for(let i=0; i<rateNum.length; i++){
        rateNum[i].readOnly = true;
-  } 
-  };
+    }
+
+  } else if(pathname.includes('sch_view')){
+    changeTit.innerHTML="Schedule Board";
+
+  
+  }
 </script>

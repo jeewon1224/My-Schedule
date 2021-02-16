@@ -66,9 +66,9 @@ canvas {position: absolute;/* top: 0px; */}
 .subPfBar .pfBarBox .pfBar{display: block; width: 0; height: 15px; background: #008c8c; border-radius: 0 10px 10px 0;}
 
 
-/* button style */
+/* button box style */
 .btns{display: flex; align-items: center; justify-content: flex-end; padding: 10px;}
-.btns button{border:1px solid #008c8c; background: #008c8c; color: #fff; font-weight: 400; font-family: 'Noto Sans KR'; padding: 10px 30px;}
+.btns button, a.schInput{border:1px solid #008c8c; background: #008c8c; color: #fff; font-weight: 400; font-family: 'Noto Sans KR'; padding: 10px 30px;}
 .btns button:nth-child(2){margin: 0 5px;}
 
 
@@ -103,3 +103,33 @@ footer p{color: #fff; font-weight: 400;}
 .item.inputBox .projectTit{width: calc(70% - 5px); height: 40px; padding: 5px; border: 1px solid #ccc; }
 .item.inputBox .projectCon{width: 100%; height: 150px; border:1px solid #ccc; resize: none; padding: 5px; margin-top: 5px;}
   */
+
+
+
+/* scuedule board style */
+.item.boardBox{padding: 10px;}
+.item.boardBox .boardTable{width: 100%; height: auto; border-bottom: 1px solid #ccc;}
+
+.item.boardBox .boardTable li:last-child{}
+.item.boardBox .boardTable li:nth-child(odd){background: #eee;}
+
+.item.boardBox .boardTable .boardTitle,
+.item.boardBox .boardTable .boardList{width: 100%; height: auto; display: flex; align-items: center; justify-content: center;}
+.item.boardBox .boardTable li.boardTitle{background: #008c8c;}
+.item.boardBox .boardTable .boardTitle span{color: #fff; }
+
+.item.boardBox .boardTable span{text-align: center; font-family: 'Noto Sans KR'; padding: 8px 0;}
+.item.boardBox .boardTable span.boNum{width: 10%;}
+.item.boardBox .boardTable span.boCate{width: 20%;}
+.item.boardBox .boardTable span.boTit{width: 50%;}
+.item.boardBox .boardTable span.boReg{width: 20%;}
+
+
+.loadMore{width: 100%; height: auto; margin-top: 10px; text-align: center;}
+.loadMore button{outline: 0; border: 1px solid #008c8c; background: #008c8c; padding: 10px 30px; color: #fff; font-family: 'Noto Sans KR';}
+
+
+.categoryTabs{width: 100%; height: auto;}
+.categoryTabs a{display: inline-block; border: 1px solid #008c8c; background: #fff;  font-family: 'Noto Sans KR'; color: #008c8c; padding: 8px 15px; margin-bottom:3px; font-weight: 300;}
+.categoryTabs a.active{background: #008c8c; color: #fff;}
+

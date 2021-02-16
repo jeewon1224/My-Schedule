@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Schedule Dashboard</title>
+  <title>Input Board</title>
 
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -54,26 +54,42 @@
 
     <!-- container -->
     <div class="center gridWrap">
-      <form action="/myschedule/php/update_rate.php" method="get" name="updateRate">
-        <div class="container">
+      <!-- <form action="/myschedule/php/update_rate.php" method="get" name="updateRate"> -->
+        <div class="inputContainer">
 
 
       <!-- 진행상황 그래프 (상단 그리드) 인클루드 연결 -->
         <?php
           include $_SERVER['DOCUMENT_ROOT']."/myschedule/include/latest_date.php";
           include $_SERVER['DOCUMENT_ROOT']."/myschedule/include/grid_up.php";
-        ?>
+          
 
+        ?>
+        
+          <div class="item boardBox">
+            
+<!-- @@@@@@@@@@@@@view_all.php@@@@@@@@@@@ 로 옮김 -->
+            <?php
+            $include_path=$_GET['key'];
+            include $_SERVER['DOCUMENT_ROOT']."/myschedule/include/$include_path.php";
+            ?>
+
+          </div>
+          <!-- item을 하나 더 추가! -->
 
           <div class="item btns">
-            <button type="submit">진행률 수정</button>
-            <button type="button" onclick="javascript:location.href='/myschedule/pages/input_form.php'">진행 상황 작성</button>
-            <button type="button"onclick="javascript:location.href='/myschedule/pages/sch_view.php?key=view_all'">진행 상황 확인</button>
+            <!-- <button type="submit">진행률 수정</button> -->
+            <a href="/myschedule/pages/input_form.php" class="schInput" >진행 상황 작성</a>
+            <!-- <button type="button">진행 상황 확인</button> -->
           </div>
+
           
+
         </div>
         <!-- end of container -->
-      </form>
+
+      <!-- </form> -->
+
     </div>
     <!-- end of center -->
 
@@ -99,7 +115,14 @@
   <script src="/myschedule/js/piechart.js"></script>
   <script src="/myschedule/js/custom.js"></script>
   <script src="/myschedule/js/total_avg.js"></script>
+ 
+  <script>
+   $(".boardList").hide();
+   $(".boardList").slice(0, 5).show();
 
-
+   $(".loadMore button").click(function(){
+    $(".boardList:hidden").slice(0, 5).show();
+   });
+  </script>
 </body>
 </html>
