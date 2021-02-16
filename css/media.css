@@ -19,14 +19,17 @@
 
 /* button box style */
   .btns{justify-content: center;}
-  .btns button{padding: 5px 20px; font-size: 12px;}
+  .btns button, .btns a{padding: 5px 20px; font-size: 12px;}
 
 
   /* footer style */
   footer{position: relative;}
 
   /* schedule board page style */
-.item.boardBox .boardTable span{font-size: 12px;}
+  .item.boardBox .boardTable span{font-size: 12px;}
+
+  /* detail view page style */
+  .item.viewBox .viewTable span{font-size: 12px;}
 
 
 
@@ -34,7 +37,7 @@
 }
 
 
-@media screen and (max-width:650px){
+@media screen and (max-width:600px){
 
   .item.inputBox .projectCate{font-size: 12px; width: 100%; }
   .item.inputBox .projectTit{font-size: 12px; width: 100%; margin-top: 5px;}
@@ -47,6 +50,13 @@
   .item.boardBox .boardTable span.boReg{width: 30%;}
 
   .categoryTabs{text-align: center;}
+
+  /* detail view page style */
+  .item.viewBox .viewTable span.boNum{display: none;}
+  .item.viewBox .viewTable span.boReg{width: 30%;}
+
+  .item.viewBox .detailTit h2{font-size: 14px;}
+
 }
 
 
@@ -63,7 +73,7 @@
   .subPfBar .pfImg{font-size: 20px;}
 
   /* button style */
-  .btns button{width: 33.33%;}
+  .btns button, .btns a{width: 33.33%;}
 
   /* footer style */
   footer{padding: 10px 15px;}
@@ -74,6 +84,11 @@
   .item.boardBox .boardTable span.boCate{display: none;}
   .item.boardBox .boardTable span.boTit{width: 60%;}
   .item.boardBox .boardTable span.boReg{width: 40%;}
+  
+  /* detail view page style */
+  .item.viewBox .viewTable span.boCate{display: none;}
+  .item.viewBox .viewTable span.boCon{width: 60%;}
+  .item.viewBox .viewTable span.boReg{width: 40%;}
   
 
 }
