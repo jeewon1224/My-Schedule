@@ -136,9 +136,9 @@ footer p{color: #fff; font-weight: 400;}
 .item.boardBox .boardTable span.boReg{width: 20%;}
 
 
-.loadMore{width: 100%; height: auto; margin-top: 10px; text-align: center;}
-.loadMore button{outline: 0; border: 1px solid #008c8c; background: #008c8c; padding: 10px 30px; color: #fff; font-family: 'Noto Sans KR';}
-
+.loadMore, .subBtn{width: 100%; height: auto; margin-top: 10px; text-align: center;}
+.loadMore button, .subBtn button{outline: 0; border: 1px solid #008c8c; background: #008c8c; padding: 10px 30px; color: #fff; font-family: 'Noto Sans KR';}
+.subBtn{display: none;}
 
 .categoryTabs{width: 100%; height: auto;}
 .categoryTabs a{display: inline-block; border: 1px solid #008c8c; background: #fff;  font-family: 'Noto Sans KR'; color: #008c8c; padding: 8px 15px; margin-bottom:3px; font-weight: 300;}
@@ -167,3 +167,10 @@ footer p{color: #fff; font-weight: 400;}
 
 .item.viewBox .detailTit{width: 100%; height: auto; padding-left: 15px; border-left: 2px solid #008c8c; margin-bottom: 10px;}
 .item.viewBox .detailTit h2{font-size: 16px; font-weight: 400; color: #555; font-family: 'Noto Sans KR';}
+
+
+/* hidden input style */
+.hiddenTit{outline:0; border:1px solid #ccc; padding: 5px; width: 50%; font-family: 'Noto Sans KR'; display: none;}
+.hiddenCon{width: 100%; height: 100px; padding: 5px; font-family: 'Noto Sans KR'; border: 1px solid #ccc; outline: 0; resize: none; overflow: hidden; display: none;}
+
+

@@ -2,7 +2,7 @@
     {
         "db_rate": "65",
         "api_rate": "78",
-        "ren_rate": "30",
-        "pla_rate": "70"
+        "ren_rate": "50",
+        "pla_rate": "50"
     }
 ]

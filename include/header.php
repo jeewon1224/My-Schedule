@@ -16,7 +16,7 @@
     
     <header>
       <div class="center headerWrap">
-        <a href="/myschedule/index.php"><i class="fa fa-home"></i></a>
+        <a href="/myschedule/php/sign_out.php"><i class="fa fa-sign-out"></i></a>
  
         <h1 id="title">Schedule Dashboard</h1>
         <div class="mIcon">
