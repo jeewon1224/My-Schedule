@@ -14,4 +14,17 @@ for(let i=0; i<$(".subPfBar").length; i++){
 // console.log($(".subPfBar").eq(0).find(".rateNum").text());
 
 
+
+
+  // header icon control
+  $(".mIcon").click(function(){
+    $(this).toggleClass("on")
+
+    if($(this).toggleClass("on")){
+      $(".depth-1").slideDown('fast');  
+    }else{
+      $(".depth-1").slideUp('fast');  
+    }
+  });
+
 });
