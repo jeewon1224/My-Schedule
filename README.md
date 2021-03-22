@@ -1,7 +1,8 @@
 # My Schedule
 포트폴리오 제작의 진행 스케줄을 관리하는 사이트입니다.</br>
 그리드 형식으로 레이아웃을 제작하였으며 간단한 파이 차트를 활용하여 진행도를 나타냈습니다.</br>
-PHP와 mariaDB로 진행 상황의 데이터 수정, 삭제 및 관리 기능을 포함하였습니다.</br>
+PHP와 mariaDB로 진행 상황의 데이터 수정, 삭제 및 관리 기능을 포함하였습니다.
+</br>
 http://rlawldnjs1224.dothome.co.kr/myschedule/index.php
 </br>
 
