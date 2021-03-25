@@ -17,7 +17,7 @@ http://rlawldnjs1224.dothome.co.kr/myschedule/index.php
 - 사이트 내에서 직접 진행률 수정, 진행 상황 작성 및 삭제 가능
 - 데이터 베이스를 통한 데이터 관리 가능
 - Json으로 받은 각 진행률을 Ajax로 평균값 출력
-- </br>
+</br>
 
 
 ## Using Tool
