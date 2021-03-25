@@ -12,10 +12,11 @@ http://rlawldnjs1224.dothome.co.kr/myschedule/index.php
 ![sche](https://user-images.githubusercontent.com/77706798/111946407-c8dae300-8b1e-11eb-88d8-663d0f6f0bfe.png)
 
 
-- 작업 진행률 수정
-- 진행률의 평균값 출력
-- 진행 상황 작성, 수정, 삭제 가능
-- 진행률, 진행 상황을 PHP와 SQL을 통해 관리 가능
+- 파이차트 쿼리 적용
+- php와 sql을 활용한 사이트 진입 시 인증코드 시스템
+- 사이트 내에서 직접 진행률 수정, 진행 상황 작성 및 삭제 가능
+- 데이터 베이스를 통한 데이터 관리 가능
+- Json으로 받은 각 진행률을 Ajax로 평균값 출력
 - </br>
 
 
