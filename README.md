@@ -3,15 +3,16 @@
 그리드 형식으로 레이아웃을 제작하였으며 간단한 파이 차트를 활용하여 진행도를 나타냈습니다.</br>
 PHP와 mariaDB로 진행 상황의 데이터 수정, 삭제 및 관리 기능을 포함하였습니다.
 </br>
+![sche](https://user-images.githubusercontent.com/77706798/111946407-c8dae300-8b1e-11eb-88d8-663d0f6f0bfe.png)
 </br>
+</br>
+
+## URL
 http://rlawldnjs1224.dothome.co.kr/myschedule/index.php
 </br>
+</br>
 
-
-## 주요 기능
-![sche](https://user-images.githubusercontent.com/77706798/111946407-c8dae300-8b1e-11eb-88d8-663d0f6f0bfe.png)
-
-
+## Feature
 - 파이차트 쿼리 적용
 - php와 sql을 활용한 사이트 진입 시 인증코드 시스템
 - 사이트 내에서 직접 진행률 수정, 진행 상황 작성 및 삭제 가능
